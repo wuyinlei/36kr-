@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 建议类型 -->
+    <string-array name="array_suggest_type">
+        <item>新需求建议</item>
+        <item>功能建议</item>
+        <item>界面建议</item>
+        <item>操作问题</item>
+        <item>质量问题</item>
+        <item>投诉</item>
+        <item>其他</item>
+    </string-array>
+</resources>

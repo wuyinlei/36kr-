@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.cniao5.app36kr_cnk"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        debug {
+            // No debug config
+        }
+/*
+        release {
+            storeFile file(MYAPP_RELEASE_STORE_FILE)
+            storePassword MYAPP_RELEASE_STORE_PASSWORD
+            keyAlias MYAPP_RELEASE_KEY_ALIAS
+            keyPassword MYAPP_RELEASE_KEY_PASSWORD
+        }*/
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.release
+        }
+    }
+
+    productFlavors {
+        wandoujia {
+            manifestPlaceholders = [CNIAO5_CHANNEL_VALUE: "wandoujia"]
+        }
+        baidu {
+            manifestPlaceholders = [CNIAO5_CHANNEL_VALUE: "baidu"]
+        }
+        c360 {
+            manifestPlaceholders = [CNIAO5_CHANNEL_VALUE: "c360"]
+        }
+        uc {
+            manifestPlaceholders = [CNIAO5_CHANNEL_VALUE: "uc"]
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/jsoup-1.8.3.jar')
+    compile 'com.squareup.okhttp:okhttp:2.6.0'
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile project(':cwidgetutil')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/jpush-android-2.0.6.jar')
+    compile 'com.android.support:design:23.2.1'
+    compile project(':social_sdk_library_project')
+}

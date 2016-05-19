@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">菜鸟新闻_开发版</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- 关于 -->
+    <string name="string_about_tv_top_name">菜鸟新闻</string>
+    <string name="string_about_tv_content">菜鸟新闻安卓客户端-是一个仿照36Kr官方App,实时抓取36Kr官网数据的资讯类新闻客户端
+包括首页新闻,详情,发现,活动,实时数据抓取,侧滑效果,第三方登录以及分享,消息推送等相关功能客户端。</string>
+    <string name="string_about_tv_bottom_right">菜鸟窝 Sky丶清</string>
+    <string name="string_about_tv_botton_copyright">Copyright ©2015-2016</string>
+    <!-- 意见反馈 -->
+    <string name="string_tv_new_suggest">新需求建议</string>
+    <string name="string_tv_question_classify">问题类型</string>
+    <string name="string_tv_suggest_content_hint">请输入您的宝贵建议和问题(必填)</string>
+    <string name="string_tv_suggest_phone">联系方式 : </string>
+    <string name="string_tv_suggest_phone_hint">必填</string>
+    <string name="string_confirm_ing">正在提交,请稍后</string>
+    <string name="update_notice_finish">下载完成，点击浏览</string>
+    <string name="update_notice_nomemory">存储空间不足，请清理空间后，重新下载。</string>
+    <string name="update_notice_error">下载过程中出错，请重新下载。</string>
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

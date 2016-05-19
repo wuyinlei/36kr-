@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+    <!--顶部导航栏布局-->
+    <include layout="@layout/find_top_bar_layout"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/color_head_title"></LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp">
+        <EditText
+            android:id="@+id/ed_username"
+            android:background="@null"
+            android:paddingLeft="5dp"
+            android:hint="请输入用户名"
+            android:maxLines="1"
+            android:lines="1"
+            android:layout_width="fill_parent"
+            android:layout_height="49dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/color_head_title"></LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp">
+        <EditText
+            android:id="@+id/ed_password"
+            android:password="true"
+            android:background="@null"
+            android:paddingLeft="5dp"
+            android:hint="请输入密码"
+            android:maxLines="1"
+            android:lines="1"
+            android:layout_width="fill_parent"
+            android:layout_height="49dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/color_head_title"></LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:text="第三方账号登录:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/qq_login"
+            android:src="@drawable/app_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_confirm_login"
+        android:layout_width="290dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:background="@color/mask_tags_8"
+        android:text="提交"
+        android:textColor="@color/color_white"
+        android:textSize="18sp" />
+</LinearLayout>

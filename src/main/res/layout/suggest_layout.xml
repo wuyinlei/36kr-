@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+    <!-- 顶部导航栏 -->
+
+    <include layout="@layout/find_top_bar_layout" />
+
+    <!-- 问题类型 -->
+
+    <include layout="@layout/line_option_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/color_white" >
+
+        <TextView
+            style="@style/style_textview_one"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:text="@string/string_tv_question_classify"
+            android:textColor="@color/color_black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_question_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_suggest_type"
+                style="@style/style_textview_one"
+                android:layout_width="80dp"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:text="@string/string_tv_new_suggest"
+                android:textColor="@color/color_head_title"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_suggest_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/arrow_down" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/line_option_layout" />
+    <!-- 反馈内容 -->
+
+    <EditText
+        android:id="@+id/et_suggest_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|top"
+        android:hint="@string/string_tv_suggest_content_hint"
+        android:minLines="8"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textSize="14sp" />
+
+    <include layout="@layout/line_option_layout" />
+    <!-- 联系方式 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/style_textview_one"
+            android:layout_marginLeft="10dip"
+            android:text="@string/string_tv_suggest_phone"
+            android:textColor="@color/color_black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_suggest_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@null"
+            android:hint="@string/string_tv_suggest_phone_hint"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <include layout="@layout/line_option_layout" />
+    <!-- 提交按钮 -->
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="290dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:background="@color/mask_tags_8"
+        android:text="提交"
+        android:textColor="@color/color_white"
+        android:textSize="18sp" />
+
+</LinearLayout>

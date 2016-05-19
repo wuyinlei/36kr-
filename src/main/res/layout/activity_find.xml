@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+    <!--顶部导航栏布局-->
+    <include layout="@layout/find_top_bar_layout"/>
+    <!--下面内容-->
+    <include layout="@layout/gallery_indicator_layout"/>
+    <!--近期活动与寻找投资人-->
+    <RelativeLayout
+        android:id="@+id/relative_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        >
+        <ImageView
+            android:id="@+id/img_activity"
+            android:scaleType="fitXY"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/find_icon_entrepreneurship_activity"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/color_head_title"
+            android:layout_toRightOf="@id/img_activity"
+            android:layout_centerVertical="true"
+            android:text="近期活动"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:background="@color/color_head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+    <RelativeLayout
+        android:id="@+id/relative_investors"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        >
+        <ImageView
+            android:id="@+id/img_investors"
+            android:scaleType="fitXY"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/find_icon_entrepreneurship_investors"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/color_head_title"
+            android:layout_toRightOf="@id/img_investors"
+            android:layout_centerVertical="true"
+            android:text="寻找投资人"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:background="@color/color_head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+</LinearLayout>

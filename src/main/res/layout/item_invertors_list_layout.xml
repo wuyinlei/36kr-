@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_margin="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        />
+    <TextView
+        android:id="@+id/item_title_name"
+        android:text="吕薇"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_img"
+        android:textColor="@color/mask_tags_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/item_title_content"
+        android:text="光信资本副总裁，关注互联网医疗、电商、金融领域"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/item_img"
+        android:textColor="@color/color_black"
+        android:layout_below="@id/item_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
